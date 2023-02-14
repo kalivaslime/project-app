@@ -13,8 +13,6 @@ const GlassPane = ({
         'glass rounded-2xl border-solid border-2 border-gray-200',
         className
       )}>
-      <h1>GlassPane</h1>
-      <p>Some content</p>
       {children}
     </div>
   )
