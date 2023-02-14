@@ -1,8 +1,13 @@
-export default function AuthRootLayout() {
+import GlassPane from '@/components/GlassPane'
+
+export default function AuthRootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <div>
-      <h1>AuthRootLayout</h1>
-      <p>Some content</p>
-    </div>
+    <GlassPane className='w-full h-full flex items-center justify-center'>
+      {children}
+    </GlassPane>
   )
 }

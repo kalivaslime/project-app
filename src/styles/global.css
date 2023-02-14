@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  [data-nextjs-scroll-focus-boundary] {
+    display: contents;
+  }
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -83,7 +93,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: var(--font-mono);
+  /* font-family: var(--font-mono); */
 }
 
 body {
@@ -107,6 +117,45 @@ a {
   }
 }
 
-.glass {
+/* .glass {
   filter: blur(10px) saturate(0.5) brightness(0.5);
+} */
+
+.gradient {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.gradient::before {
+  background: var(--secondary-glow);
+  border-radius: 50%;
+  width: 480px;
+  height: 360px;
+  margin-left: -400px;
+}
+
+.gradient::after {
+  background: var(--primary-glow);
+  width: 240px;
+  height: 180px;
+  z-index: -1;
+}
+
+.gradient::before,
+.gradient::after {
+  content: '';
+  left: 50%;
+  position: absolute;
+  filter: blur(45px);
+  transform: translateZ(0);
+}
+
+.glass {
+  backdrop-filter: blur(20px) saturate(200%);
+  background-color: rgba(133, 133, 133, 0.08);
+}
+
+[data-nextjs-scroll-focus-boundary] {
+  display: contents;
 }
