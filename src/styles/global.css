@@ -83,6 +83,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: var(--font-mono);
 }
 
 body {
@@ -104,4 +105,8 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.glass {
+  filter: blur(10px) saturate(0.5) brightness(0.5);
 }
