@@ -4,20 +4,19 @@ const buttonClasses = cva(
   [
     'rounded-3xl',
     'font-bold',
-    'hover:scale-110',
     'active:scale-100',
     'transition',
-    'duration-200',
+    'duration-300',
     'ease-in-out',
   ],
   {
     variants: {
       intent: {
         primary: [
-          'bg-slate-600',
+          'bg-violet-600',
           'text-white',
           'border-transparent',
-          'hover:bg-slate-700',
+          'hover:bg-violet-700',
         ],
         secondary: [
           'bg-white',

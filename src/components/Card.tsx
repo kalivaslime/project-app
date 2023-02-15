@@ -10,7 +10,7 @@ const Card = ({
   return (
     <div
       className={clsx(
-        'rounded-3xl px-10 py-4 drop-shadow-xl bg-white',
+        'rounded-md p-2  px-10 py-4 drop-shadow-xl bg-white bg-opacity-80',
         className
       )}>
       {children}

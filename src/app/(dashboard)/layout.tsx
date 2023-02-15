@@ -7,7 +7,7 @@ export default function DashRootLayout({
   children: React.ReactNode
 }) {
   return (
-    <GlassPane className='w-full h-full flex items-center '>
+    <GlassPane className='w-full h-full p-1 flex gap-2 items-center '>
       <Sidebar />
       {children}
     </GlassPane>

@@ -10,7 +10,7 @@ const getData = async () => {
   return user
 }
 
-const Greetings = async () => {
+const Greeting = async () => {
   const user = await getData()
 
   return (
@@ -24,10 +24,10 @@ const Greetings = async () => {
         </h4>
       </div>
       <div>
-        <Button size='large'>Today's Schedule</Button>
+        <Button size='large'>Today&apos;s Schedule</Button>
       </div>
     </Card>
   )
 }
 
-export default Greetings
+export default Greeting
