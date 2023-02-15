@@ -2,13 +2,11 @@ import bcrypt from 'bcrypt'
 import { SignJWT, jwtVerify } from 'jose'
 import { db } from './db'
 
-export const hashPassword = async (password: string) => {
+export const hashPassword = async (password: string) =>
   bcrypt.hash(password, 10)
-}
 
-const comparePassword = async (password: string, hash: string) => {
+export const comparePasswords = async (password: string, hash: string) =>
   bcrypt.compare(password, hash)
-}
 
 export const createJWT = (user: any) => {
   // return jwt.sign({ id: user.id }, 'cookies')
