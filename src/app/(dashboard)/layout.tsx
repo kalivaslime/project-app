@@ -1,4 +1,5 @@
 import GlassPane from '@/components/GlassPane'
+import Sidebar from '@/components/Sidebar'
 
 export default function DashRootLayout({
   children,
@@ -6,7 +7,8 @@ export default function DashRootLayout({
   children: React.ReactNode
 }) {
   return (
-    <GlassPane className='w-full h-full flex items-center justify-center'>
+    <GlassPane className='w-full h-full flex items-center '>
+      <Sidebar />
       {children}
     </GlassPane>
   )

@@ -17,7 +17,7 @@ export default function RootLayout({
     head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
   */}
       <head />
-      <body className='rainbow-mesh h-screen w-screen p-6'>{children}</body>
+      <body className='candy-mesh h-screen w-screen p-6'>{children}</body>
     </html>
   )
 }
