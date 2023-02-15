@@ -1,8 +1,3 @@
 export default function Page() {
-  return (
-    <div>
-      <h1>Page</h1>
-      <p>Some content</p>
-    </div>
-  )
+  return <div>Oops middleware does not let you access this page</div>
 }
