@@ -8,7 +8,7 @@ export default function DashRootLayout({
 }) {
   return (
     <GlassPane className='w-full h-full p-1 flex gap-2 items-center '>
-      <Sidebar />
+      {/* <Sidebar /> */}
       {children}
     </GlassPane>
   )

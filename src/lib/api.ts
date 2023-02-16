@@ -53,7 +53,7 @@ export const register = async (user: any) => {
 
 export const signin = async (user: any) => {
   return fetcher({
-    url: '/api/login',
+    url: '/api/signin',
     method: 'POST',
     body: user,
     json: false,

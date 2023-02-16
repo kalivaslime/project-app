@@ -10,7 +10,7 @@ const GlassPane = ({
   return (
     <div
       className={clsx(
-        'glass rounded-md border-solid border-2 border-transparent',
+        // 'glass rounded-md border-solid border-2 border-transparent',
         className
       )}>
       {children}

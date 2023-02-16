@@ -11,20 +11,18 @@
 * {
   box-sizing: border-box;
 }
-
-.rainbow-mesh {
-  background-color: hsla(0, 100%, 50%, 1);
-  background-image: radial-gradient(
-      at 40% 20%,
-      hsla(28, 100%, 74%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
-    radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  background-color: #f5f5f5;
+  color: #333;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .candy-mesh {
@@ -40,22 +38,35 @@
     radial-gradient(at 35% 44%, hsla(337, 92%, 61%, 1) 0px, transparent 50%);
 }
 
-.black-mesh {
-  background-color: #000;
+.yo-mesh {
+  /* background-image: linear-gradient(
+    to bottom,
+    #220c59,
+    #2e146d,
+    #40227e,
+    #53318d,
+    #693f9a,
+    #7a4ca3,
+    #8c58ab,
+    #a164b0,
+    #ba70b4,
+    #d57bbe,
+    #ef86c7,
+    #ff9bce
+  );
+  background-size: cover;
+  background-repeat: no-repeat; */
 
-  background-image: radial-gradient(
-      at 99% 6%,
-      hsla(0, 0%, 52%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 55% 88%, hsla(0, 0%, 42%, 1) 0px, transparent 50%),
-    radial-gradient(at 53% 27%, rgb(179, 73, 73) 0px, transparent 50%),
-    radial-gradient(at 89% 89%, hsla(0, 0%, 22%, 1) 0px, transparent 50%),
-    radial-gradient(at 35% 44%, hsla(0, 0%, 12%, 1) 0px, transparent 50%);
+  background-color: #d8c5eb;
+  background-image: radial-gradient(at 99% 6%, #693f9a 0px, transparent 50%),
+    radial-gradient(at 55% 88%, hsla(271, 78%, 63%, 1) 0px, transparent 50%),
+    radial-gradient(at 53% 27%, hsla(271, 78%, 63%, 1) 0px, transparent 50%),
+    radial-gradient(at 89% 89%, hsla(317, 89%, 70%, 1) 0px, transparent 50%),
+    radial-gradient(at 35% 44%, hsla(337, 92%, 61%, 1) 0px, transparent 50%);
 }
 
 .glass {
-  backdrop-filter: blur(100px) saturate(180%);
+  backdrop-filter: saturate(150%);
   background-color: rgba(255, 255, 255, 0.13);
 }
 
