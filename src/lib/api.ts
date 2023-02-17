@@ -60,4 +60,12 @@ export const signin = async (user: any) => {
   })
 }
 
+export const createNewProject = async (name: string) => {
+  return fetcher({
+    url: '/api/project',
+    method: 'POST',
+    body: { name },
+  })
+}
+
 export default fetcher
